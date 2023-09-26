@@ -6,51 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/flexbox.css"> -->
     <!-- <link rel="stylesheet" href="css/position.css"> -->
-    <link rel="stylesheet" href="css/mpf.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
     <head>
         <Title>Detriox</Title>
     </head>
     <body>
         <header class="header" id="header">
             <section class="section top-header">
-                <div class="inner">
-                     <p class="th-text">
-                        <a href="#" class="th-link">www.demolink.org</a>
-                     </p>
-                     <ul class="th-list">
-                        <li class="th-item">
-                            <a href="" class="th-link">support</a>
-                        </li>
-                        <li class="th-item">
-                            <a href="" class="th-link">faqs</a>
-                        </li>
-                        <li class="th-item">
-                            <a href="" class="th-link">sitemap</a>
-                        </li>
-                        <li class="th-item">
-                            <a href="" class="th-link">help</a>
-                        </li>
-                     </ul>
+                <div class="container">
+                    <nav class="nav navbar-expand-lg top-nav" id="topNav">
+                        <p class="th-text">
+                            <a href="#" class="th-link">www.demolink.org</a>
+                        </p>
+                        <ul class="th-list ms-auto">
+                            <li class="th-item d-inline ms-auto">
+                                <a href="" class="th-link d-inline">support</a>
+                            </li>
+                            <li class="th-item d-inline">
+                                <a href="" class="th-link d-inline">faqs</a>
+                            </li>
+                            <li class="th-item d-inline">
+                                <a href="" class="th-link d-inline">sitemap</a>
+                            </li>
+                            <li class="th-item d-inline">
+                                <a href="" class="th-link d-inline">help</a>
+                            </li>
+                        </ul>
+                    </nav>
                      <!-- <div class="clear"></div> -->
                 </div>
             </section>
             <section class="section bottom-header">
-                <div class="inner">
-                    <h1 class="logo">
+                <div class="container">
+                    <nav class="nav" id="navBm">
+                    <h1 class="logo mt-2">
                         <a href="index.html"></a>
                         <img src="images/media/logo.jpg" alt="Detriox logo" class="logo-img">
                     </a>
                     </h1>  
-                    <nav class="nav">
-                        <ul class="nav-list">
-                            <li class="nav-item"><a href="" class="nav-link">home</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">about</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">services</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">faqs</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">contacts</a></li>
+                        <ul class="nav-list ms-auto" id="navList">
+                            <li class="nav-item d-inline">
+                                <button type="button" class="btn btn-primary btn-lg text-uppercase">home</button>
+                                <!-- <a href="" class="nav-link d-inline">home</a> -->
+                            </li>
+                            <li class="nav-item d-inline">
+                                <button type="button" class="btn btn-primary btn-lg text-uppercase">about</button>
+                                <!-- <a href="" class="nav-link d-inline">about</a> -->
+                            </li>
+                            <li class="nav-item d-inline">
+                                <button type="button" class="btn btn-primary btn-lg text-uppercase">services</button>
+                                <!-- <a href="" class="nav-link d-inline">services</a> -->
+                            </li>
+                            <li class="nav-item d-inline">
+                                <button type="button" class="btn btn-primary btn-lg text-uppercase">faqs</button>
+                                <!-- <a href="" class="nav-link d-inline">faqs</a> -->
+                            </li>
+                            <li class="nav-item d-inline">
+                                <button type="button" class="btn btn-primary btn-lg text-uppercase">contacts</button>
+                                <!-- <a href="" class="nav-link d-inline">contacts</a> -->
+                            </li>
                         </ul>
                     </nav>
                     <!-- <div class="clear"></div>               -->
@@ -59,9 +77,9 @@
         </header>
         <main class="main" id="main">
             <section class="section branding">
-                <div class="inner">
+                <div class="container">
                     <div class="hero">
-                        <img src="images/media/hero.jpg" alt=" Think big. Win the world. Click to read more." class="hero-img">
+                        <img src="images/media/hero.jpg" alt=" Think big. Win the world. Click to read more."class=" hero-img img-fluid image banner-img w-100 d-block mx-auto rounded"/>
                     </div>
                     <div class="sliders">
                         <div class="slider" id="slider1"></div>
@@ -72,37 +90,41 @@
                 </div>
             </section>
             <section class="section content-secton">
-                <div class="inner">
-                    <div class="content-box" id="contentBox1">
-                        <h2 class="content-h2">smart</h2>
-                        <img src="images/media/smart.jpg" alt="Three puzzle pieces" class="content-img">
-                        <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem quibusdam blanditiis voluptas. Nam iste a cupiditate dolore? Odio non porro quas asperiores. Eius nam pariatur omnis.
-                        </p>
-                        <button class="more-btn" id="moreBtn1">more</button>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4"></div>">
+                        <div class="col">
+                            <div class="content-box" id="contentBox1">
+                                <h2 class="content-h2">smart</h2>
+                                <img src="images/media/smart.jpg" alt="Three puzzle pieces" class="content-img">
+                                <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem quibusdam blanditiis voluptas. Nam iste a cupiditate dolore? Odio non porro quas asperiores. Eius nam pariatur omnis.
+                                </p>
+                                <button class="more-btn" id="moreBtn1">more</button>
+                            </div>
+                            <div class="content-box" id="contentBox2">
+                                <h2 class="content-h2">strong</h2>
+                                <img src="images/media/strong.jpg" alt="A maze diagram" class="content-img">
+                                <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem quibusdam blanditiis voluptas. Nam iste a cupiditate dolore? Odio non porro quas asperiores. Eius nam pariatur omnis.
+                                </p>
+                                <button class="more-btn" id="moreBtn2">more</button>
+                            </div>
+                            <div class="content-box" id="contentBox3">
+                                <h2 class="content-h2">stable</h2>
+                                <img src="images/media/stable.jpg" alt="Three puzzle pieces" class="content-img">
+                                <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem quibusdam blanditiis voluptas. Nam iste a cupiditate dolore? Odio non porro quas asperiores. Eius nam pariatur omnis.
+                                </p>
+                                <button class="more-btn" id="moreBtn3">more</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-box" id="contentBox2">
-                        <h2 class="content-h2">strong</h2>
-                        <img src="images/media/strong.jpg" alt="A maze diagram" class="content-img">
-                        <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem quibusdam blanditiis voluptas. Nam iste a cupiditate dolore? Odio non porro quas asperiores. Eius nam pariatur omnis.
-                            </p>
-                        <button class="more-btn" id="moreBtn2">more</button>
+                        <!-- <div class="clear"></div> -->
                     </div>
-                    <div class="content-box" id="contentBox3">
-                        <h2 class="content-h2">stable</h2>
-                        <img src="images/media/stable.jpg" alt="Three puzzle pieces" class="content-img">
-                        <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem quibusdam blanditiis voluptas. Nam iste a cupiditate dolore? Odio non porro quas asperiores. Eius nam pariatur omnis.
-                        </p>
-                            <button class="more-btn" id="moreBtn3">more</button>
-                    </div>
-                    <!-- <div class="clear"></div> -->
-                </div>
             </section>
         </main>
         <footer class="footer" id="footer">
             <section class="section top-section">
-                <div class="inner">
+                <div class="container">
                     <div class="footer-div services-div">
-                        <div class="service-inner">
+                        <div class="service-container">
                             <h2 class="footer-h2">services</h2>
                             <ul class="services-list">
                                 <li class="services-item"><a href="#" class="services-link">Lorem ipsum dolor sit.</a>
@@ -124,7 +146,7 @@
                         <button class="more-btn" id="moreBtn4">more</button>
                     </div>
                     <div class="footer-div opp-div">
-                        <div class="opp-inner">
+                        <div class="opp-container">
                             <h2 class="footer-h2">opportunities</h2>
                             <ul class="opp-list">
                                 <li class="opp-item">
@@ -140,7 +162,7 @@
                         <button class="more-btn" id="moreBtn5">more</button>
                     </div>
                     <div class="footer-div news-div">
-                        <div class="news-inner">
+                        <div class="news-container">
                             <h2 class="footer-h2">news</h2>
                             <ul class="news-list">
                                 <li class="news-item">
@@ -184,7 +206,7 @@
                 </div>
                 </section>
                 <section class="section bottom-section">
-                    <div class="inner">
+                    <div class="container">
                         <p class="colophon">detroix &copy; 2023 &middot; <a href="#">privacy policy</a>
                         </p>
                     </div>

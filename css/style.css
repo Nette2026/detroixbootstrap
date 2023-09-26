@@ -1,0 +1,47 @@
+:root {    
+    --blue: #131c29;
+    --orange: #ff8901;
+    --bg: #f1f2f4;
+    --btn: #213349;
+    --date1: #bb8640;
+    --date2: #bd5e42;
+    --date3: #bd425e;
+    --bottomSec: #0b1016;
+    --bottomLtB: #37577d;
+    --font: 'Oswald', sans-serif;
+    --grad: radial-gradient( at top center,
+    #37577d,
+     var(--blue) 40%
+ );
+ }
+
+ *{box-sizing: ;}
+
+ border {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--bg);
+}
+
+a {
+    text-decoration: none;
+}
+ 
+.container {
+    margin: 0 auto;
+    width: 90%;
+    /* border: 1px solid yellow; */
+}
+
+.top-header {
+    background-color: var(--blue);
+}
+
+#navList {
+ margin-top: 30px ;
+}
+
+.hero-image {
+    width: 100% ;
+}
