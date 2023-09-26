@@ -1,0 +1,346 @@
+:root {    
+       --blue: #131c29;
+       --orange: #ff8901;
+       --bg: #f1f2f4;
+       --btn: #213349;
+       --date1: #bb8640;
+       --date2: #bd5e42;
+       --date3: #bd425e;
+       --bottomSec: #0b1016;
+       --bottomLtB: #37577d;
+       --font: 'Oswald', sans-serif;
+       --grad: radial-gradient( at top center,
+       #37577d,
+        var(--blue) 40%
+    );
+    }
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--bg);
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0;
+}
+.section {
+    border: 1 px solid #ff8901;
+}
+.inner {
+    margin: 0 auto;
+    width: 90%;
+    /* border: 1px solid yellow; */
+}
+
+/* ------------header---------------- */
+.top-header {
+    background-color: var(--blue);
+}
+
+.top-header .inner {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    /* border: 2px solid palegreen; */
+}
+
+.th-item {
+    display: inline;
+    margin-right:  8px;
+    padding: 0, 6px;
+    border-right: 1px solid #777;
+}
+
+.th-item:last-child {
+    margin-right: 0;
+    border-right: none;
+}
+
+
+.th-link {
+    font-size: 8px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.bottom-header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .nav-list {
+    margin-top: 50px;
+    padding-left: 0;
+    list-style-type: none;
+    text-align: right;
+} 
+
+.nav-item {
+    display: inline;
+    margin-left: 0px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    background-color: var(--orange)
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item:last-child:hover {
+    background-color: var(--orange);
+}
+
+.nav-item a{
+    text-transform: uppercase;
+    color: var(--bg);
+}
+
+.nav-link {
+    color: var(--bg);
+}
+
+/*------------ main---------- */
+
+.branding .inner{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.hero-img {
+    /* display: block; */
+    /* margin: 0;
+    padding: 0; */
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.sliders { 
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 79px;
+    height: 25px;
+    /* border: 2px solid yellowgreen; */
+}
+
+.slider {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #999;
+}
+
+.slider:hover {
+    background-color: var(--orange);
+}
+
+/* --------------content section ----------*/
+
+.content-section, .inner { 
+    /* border: 5px soild salmon; */
+    display: flex;
+}
+
+.content-h2 {
+    text-transform: uppercase;
+}
+
+.content-box {
+    border-top: 1px solid #777;
+}
+
+#contentBox2{
+    border-left: 1px solid
+    #777;
+    border-right: 1px solid #777;
+}
+
+.more-btn {
+    display: flex;
+    font-size: 20px;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    color: #f1f2f4;   
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: var(--btn)
+ }
+
+/* -------------footer ---------------*/
+
+ .top-section { 
+    padding-bottom: 40px;
+    background-color: var(--blue);
+    background-image: var(--grad);
+    /* border: 1px solid red;  */
+}
+
+ .top-section .inner {
+    display: flex;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: calc(100% / 3);
+    height: 650px;
+    /* border: 2px solid red; */
+}
+
+.services .inner {
+    display: flex;
+}
+ 
+.footer-h2 {
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--bg);
+}
+
+.services-list {
+    padding: 20px;
+    .life-style-image: url(../images/media/cog.png);
+}
+
+.services-item {
+    margin: 6px 0;
+} 
+
+ .service-link {
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--bg);
+}
+
+.footer .more-btn {
+    align-self: flex-start;
+    font-size: 35px;
+    text-transform: uppercase;
+    background-color: var(--bottomLtB1);
+    color: var(--bg);
+    border-radius: 5px;
+}
+
+.opp-list {
+    padding-left: 20px;
+    list-style-image: url(../images/media/chat.png);
+}
+
+.opp-item {
+    height: 178px;
+}
+
+.footer-h3 { 
+     font-size: 18px; 
+}
+
+.opp-text {
+    padding-right: 40px;
+}
+
+.footer-h3, .opp-text {
+    font-weight: 300;
+    color: var(--bg);
+}
+
+.footer-h3 {
+     font-size: 20px; 
+}
+ 
+.opp-text, .news-text { 
+    font-size: 14px;
+    line-height: 2; 
+    color: #999; 
+}
+
+.news-list {
+    list-style-type: none; 
+    padding: 0;
+}
+
+ .news-item {
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+} 
+.date-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+ .day-span {
+    font-size: 40px;
+}
+
+.month-span {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#date1 {
+    background-color: var(--date1);
+}
+
+#date2 {
+    background-color: var(--date2);
+}
+
+#date3 {
+    background-color: var(--date3);
+} 
+
+.news-block {
+    width: 200px;
+}
+ .bottom-section { 
+    background-color: var(--bottomSec);
+    padding-top: 20px;
+    width: 100%;
+    height: 160px;
+ }
+
+ .bottom-section .inner {
+    display: flex;
+ }
+
+ .colophon {
+    padding-left: 3px;
+    width: 300px;
+    height: 30px;
+    display: black;
+    text-transform: uppercase;
+    color: #777;    
+ }
+
+ .colophon a {
+    color: #777;
+ } 
+
+ /*--------------------------------------------------- Antwonette Williams---------------------------------------------------------------- */

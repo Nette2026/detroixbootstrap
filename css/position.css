@@ -1,0 +1,249 @@
+
+:root {
+    --blue: #131c29;
+    --orange: #ff8901;
+    --bg: #f1f2f4;
+    --btn: #213349;
+    --date1: #bb8640;
+    --date2: #bd5e42;
+    --date3: #bd425e;
+    --bottomSec: #0b1010;
+    --font: 'Oswald', sans-serif;
+    --grad: radial-gradient( at top center,
+        #37577d,
+        var(--blue) 40%
+    );
+}
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--bg);
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.a:hover {
+    color: var(--orange);
+}
+
+.inner {
+    margin: 0 auto;
+    width: 90%;
+    /* border: 1px solid red; */
+}
+
+.top-header {  
+    height: 50px;    
+    background-color: var(--blue);
+    /* border: 2px solid orange; */
+}
+
+.top-header, .inner {
+    position: relative;
+    top: 10px;
+}
+
+.th-text, .th-list {
+    font-size: 10px;
+    font-weight: 200;
+    position: absolute;
+    width: 50%;
+    top: 10px;
+}
+
+.th-list {
+    right: 0;
+    margin: 0;
+    text-align: right;
+    /* border: 1px solid yellow; */
+}
+
+.th-text {
+    left: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.th-item {
+    display: inline;
+    margin-right: 6px;
+    padding: 0, 12px;
+    border-right: 1px solid #777;
+}
+
+.th-link {
+    color: #777;
+    text-transform: uppercase;
+}
+
+.th-item:last-child {
+    margin-right: 0;
+    border-right: 9px;
+}
+
+.bottom-header, .inner {
+    position: relative;
+    /* background-color:  #bd425e; */
+    /* border: 1px solid rebeccapurple; */
+}
+
+.bottom-header {
+    height: 150px;
+    width: 100%;
+    /* background: #bb8640; */
+}
+
+
+.logo, .nav {
+    position: absolute;
+    top: 10px;
+    width: 50%;
+}
+ 
+.logo {
+    margin: 0 auto;
+    left: 0;
+    text-align: left;
+}
+.nav {
+    margin: 25px 0;
+    right: 0;
+    text-align: right;
+    display: inline;
+}
+
+.nav-item {
+    display: inline;
+    text-transform: uppercase;
+    text-align: right;
+    text-decoration: none;
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+
+.nav-list {
+    margin-top: 25px;
+    font-size: 22px;
+    list-style-type: none;
+    right: 5px;
+    text-align: right;
+    /* text-align: right; */
+} 
+
+.nav-item:hover {
+    background-color: var(--orange)
+
+}
+.nav-item a{
+    text-transform: uppercase;
+    color: var(--bg);
+}
+
+.nav-link {
+    
+    color: var(--bg);
+}
+/*---------  main --------------*/
+
+.hero-img {
+   margin-right: 0 auto;
+   width: 100%;
+   border-radius: 10px; 
+}  
+.sliders { 
+    display: inline;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 79px;
+    height: 25px;
+    /* border: 2px solid yellowgreen; */
+}
+ .slider { 
+    margin-left: 1.5px;
+    width: 75px;
+    height: 25px;
+    background-color: #777;
+    border: none;
+    border-radius: 20px;
+    display: inline; */
+    /* align-items: center; */
+} 
+.slider:hover {
+    background-color: var(--orange);
+} 
+
+.content-section, .inner {
+    position: relative;
+    width: 100%;
+    border: 1px salmon;
+} 
+.content-section {
+    height: 0 auto;
+}
+
+.content-box, .content-h2 {
+    position: absolute;
+    width: 33.33%;
+    height: auto;
+    border: 1 px solid orangered;
+} 
+
+.content-h2 {
+    text-transform: uppercase;  
+}
+
+#contentBox1 {
+    align-items: left;
+}
+
+ #contentBox2 {
+    align-items: center;
+ }
+
+ #contentBox3 {
+    align-items: right;
+ }
+
+
+ /* .content-box, .inner { 
+    position: relative;
+     border: 3px solid saddlebrown; 
+}  */
+
+/* .content-box {
+    margin: 0 auto;
+    padding: 32px, 20px;
+    width: 33.33%; 
+} */
+
+/* .content-box:first-child {
+    margin-left: 100px;
+    margin-top: 350px; */
+    /* margin-top: 700px;
+    border-top: 1px solid #999;
+} */
+
+/* .content-box:nth-child(2) {
+    margin-top: -388px;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+} */
+/* 
+.content-box:nth-child(3) { */
+    /* margin-right: 200px; */
+    /* margin-bottom: 100px; */
+    /* margin-top: -388px; */
+    /* border-top: 1px solid #999; */
+/* } */
+
+/* .section {
+    padding: 0 20px;
+} */ 
