@@ -16,94 +16,89 @@
     </head>
     <body>
         <header class="header" id="header">
-            <section class="section top-header">
+            <section class="section top-header" id="topHeader">
                 <div class="container">
-                    <div class="row col-6">
-                        <nav class="nav navbar-expand-lg top-nav" id="topNav">
+                    <div class="row">
+                        <div class="col-4">
                             <p class="th-text">
-                                <a href="#" class="th-link">www.demolink.org</a>
+                                <a href="#" class="th-link text-secondary">www.demolink.org</a>
                             </p>
-                            <ul class="th-list ms-auto">
-                                <li class="th-item d-inline ms-auto">
-                                    <a href="" class="th-link d-inline">support</a>
-                                </li>
-                                <li class="th-item d-inline">
-                                    <a href="" class="th-link d-inline">faqs</a>
-                                </li>
-                                <li class="th-item d-inline">
-                                    <a href="" class="th-link d-inline">sitemap</a>
-                                </li>
-                                <li class="th-item d-inline">
-                                    <a href="" class="th-link d-inline">help</a>
-                                </li>
-                            </ul>
-                        </nav>
+                        </div>
+                        <div class="col-8">
+                            <nav class="nav top-nav justify-content-end" id="topNav">
+                                <a href="" class="nav-link text-secondary">support</a>
+                                <a href="" class="nav-link text-secondary">faqs</a>
+                                <a href="" class="nav-link text-secondary">sitemap</a>
+                                <a href="" class="nav-link text-secondary">help</a>
+                            </nav>
+                        </div>
                     </div>
-                     <!-- <div class="clear"></div> -->
+                    <!-- <div class="clear"></div> -->
                 </div>
             </section>
             <section class="section bottom-header">
-                <nav class="navbar navbar-expand-lg" id="navBm">
                 <div class="container">
-                    <h1 class="logo mt-2">
-                        <a href="index.html"></a>
-                        <img src="images/media/logo.jpg" alt="Detriox logo" class="logo-img">
-                    </a>
-                    </h1>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>  
-                        <ul class="nav-list ms-auto mb-2 mb-lg-0" id="navList">
-                            <li class="nav-item d-inline">
-                                <button type="button" class="btn btn-primary btn-lg text-uppercase">home</button>
-                                <!-- <a href="" class="nav-link d-inline">home</a> -->
-                            </li>
-                            <li class="nav-item d-inline">
-                                <button type="button" class="btn btn-primary btn-lg text-uppercase">about</button>
-                                <!-- <a href="" class="nav-link d-inline">about</a> -->
-                            </li>
-                            <li class="nav-item d-inline">
-                                <button type="button" class="btn btn-primary btn-lg text-uppercase">services</button>
-                                <!-- <a href="" class="nav-link d-inline">services</a> -->
-                            </li>
-                            <li class="nav-item d-inline">
-                                <button type="button" class="btn btn-primary btn-lg text-uppercase">faqs</button>
-                                <!-- <a href="" class="nav-link d-inline">faqs</a> -->
-                            </li>
-                            <li class="nav-item d-inline">
-                                <button type="button" class="btn btn-primary btn-lg text-uppercase">contacts</button>
-                                <!-- <a href="" class="nav-link d-inline">contacts</a> -->
-                            </li>
-                        </ul>
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg" id="navBm">
+                            <h1 class="logo">
+                                <a href="index.html"></a>
+                                <img src="images/media/logo.jpg" alt="Detriox logo" class="logo-img">
+                            </a>
+                        </h1>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>  
+                        <div class="collapse navbar-collapse" id="navbarSupportContent">
+                            <ul class="navbar ms-auto mb-2 mb-lg-0" id="navList">
+                                <li class="nav-item">
+                                    <!-- <button type="button" class="btn btn-primary btn-lg text-uppercase">home</button> -->
+                                    <a href="#" class="nav-link active">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <!-- <button type="button" class="btn btn-primary btn-lg text-uppercase">about</button> -->
+                                    <a href="#" class="nav-link active">about</a>
+                                </li>
+                                <li class="nav-item">
+                                    <!-- <button type="button" class="btn btn-primary btn-lg text-uppercase">services</button> -->
+                                    <a href="#" class="nav-link active">services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <!-- <button type="button" class="btn btn-primary btn-lg text-uppercase">faqs</button> -->
+                                    <a href="#" class="nav-link active">faqs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <!-- <button type="button" class="btn btn-primary btn-lg text-uppercase">contacts</button> -->
+                                    <a href="#" class="nav-link active">contacts</a>
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
-                    <!-- <div class="clear"></div>               -->
+                </div>
                 </div>
             </section>
         </header>
         <main class="main" id="main">
             <section class="section branding">
                 <div class="container">
-                    <div class="hero">
                         <img src="images/media/hero.jpg" alt=" Think big. Win the world. Click to read more."class=" hero-img img-fluid image banner-img w-100 d-block mx-auto rounded"/>
-                    </div>
                     <div class="sliders">
                         <div class="slider" id="slider1"></div>
                         <div class="slider" id="slider2"></div>
                         <div class="slider" id="slider3"></div>
-                        <!-- <div class="clear"></div> -->
                     </div>
                 </div>
             </section>
             <section class="section content-secton">
                 <div class="container">
-                    <div class="row m-5 row-cols-1 row-cols-md-3 row-cols-lg-4 g-4"></div>
-                        <div class="col">
-                            <div class="content-box col-lg-4" id="contentBox1">
+                    <div class="row">
+                        
+                        <div class="content-box col-lg-4" id="contentBox1">
                                 <h2 class="content-h2 text-uppercase">smart</h2>
                                 <img src="images/media/smart.jpg" alt="Three puzzle pieces" class="content-img">
                                 <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem quibusdam blanditiis voluptas. Nam iste a cupiditate dolore? Odio non porro quas asperiores. Eius nam pariatur omnis.
                                 </p>
                                 <button class="more-btn" id="moreBtn1">more</button>
+                            </div>
                             </div>
                             <div class="content-box col-lg-4" id="contentBox2">
                                 <h2 class="content-h2 text-uppercase">strong</h2>
